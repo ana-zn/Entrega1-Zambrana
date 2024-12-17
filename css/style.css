@@ -121,13 +121,11 @@ ul{
 }
 
 
-/*--*/
 .wrapper{
     display: flex;
     gap: 16px; 
     
 }
-
 
 .category__item-wrapper {
     display: grid; 
@@ -222,8 +220,8 @@ button{
 #quantity-control {
     display: flex; 
     flex-direction: row !important;
-    align-items: center; /* Alinea verticalmente los elementos al centro */
-    gap: 8px; /* Espacio entre los elementos */
+    align-items: center;
+    gap: 8px; 
 }
 
 #quantity-control button {
