@@ -119,20 +119,8 @@ ul{
 .menu-categories{
     flex: 1;
 }
-.menu-categories__buttons .menu-categories__list {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    margin-bottom: 16px;
-}
-.menu-categories__list-item {
-    width: 100%;
-    text-align: center;
-    list-style: none;
-    border: 2px solid #25282A;
-    border-radius: 100px;
-    padding: 8px 0;
-}
+
+
 /*--*/
 .wrapper{
     display: flex;
@@ -140,12 +128,6 @@ ul{
     
 }
 
-.menu-categories__list-item a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: var(--primary-color);
-
-}
 
 .category__item-wrapper {
     display: grid; 

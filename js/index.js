@@ -44,7 +44,6 @@ const productos = [
         img: "media/Avocadotoast.png"
     },
 ]
-console.log(productos); 
 
 const shopContent = document.getElementById("shopContent");
 const cartContent = document.getElementById("cartContent");
@@ -95,18 +94,18 @@ function subtractFromCart(id) {
     const item = cart.find((item) => item.id === id);
 
     if (item) {
-        item.quantity--; // Restar cantidad
+        item.quantity--; 
         if (item.quantity === 0) {
-            removeFromCart(id); // Eliminar si la cantidad llega a 0
+            removeFromCart(id); 
         } else {
-            renderCart(); // Volver a renderizar el carrito
+            renderCart(); 
         }
     }
 }
 
-// Renderizar el carrito
+
 function renderCart() {
-    cartContent.innerHTML = ""; // Limpiar el carrito antes de renderizar
+    cartContent.innerHTML = ""; 
     let total = 0;
 
     cart.forEach((item) => {
@@ -153,5 +152,5 @@ function removeFromCart(id) {
 // Alerta confirmar
 totalPayButton.addEventListener("click", () => {
     const total = totalPrice.textContent || "0"; // Obtener el total actual
-    alert(`El total de la compra es: $${total}\n¡Gracias por su compra!`);
+    alert(`El total de la compra es: $${total} ¡Gracias por su compra!`);
 });
