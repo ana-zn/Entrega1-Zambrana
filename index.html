@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crumbly | Menu</title>
+       <!-- Favicon -->
+       <link rel="icon" href="/media/favicon.svg" type="image/png">
+       <!-- Stylesheets -->
+       <!-- Main CSS -->
+       <link rel="stylesheet" href="css/style.css">
+       <!-- Boxicons CSS for icons -->
+       <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+       <!-- Google Fonts Preconnect -->
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       
+</head>
+<body>
+      <!--Contenedor Header-->
+      <header class="main__header">
+        <div class="header__navbar">
+            <!-- Contenedor de la barra de navegación -->
+            <nav class="nav__container">
+                 <!-- Svg - Contenedor del Logo -->
+            <div class="header__logo">
+                <img src="/media/crumblylogo.svg" alt="logo de crumbly">
+            </div>
+                <!-- Links del Menú -->
+                <ul class="header__nav-list nav-list--header">
+                    <li class="header__nav-list-item"><a class="header__nav-link" href="../index.html">Inicio</a></li>
+                    <li class="header__nav-list-item"><a class="header__nav-link" href="../html/menubebidas.html">Menú</a></li>
+                    <li class="header__nav-list-item"><a class="header__nav-link" href="../html/productos.html">Productos</a></li>
+                    <li class="header__nav-list-item"><a class="header__nav-link" href="../html/nosotros.html">Nosotros</a></li>
+                    <li class="header__nav-list-item"><a class="header__nav-link" href="../html/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+           
+            
+        </div>
+    </header>
+    <!------------------------------------------>
+    <!--Contenedor Main-->
+    <main class="main___container">
+        <section class="content__container">
+          <!--Titulo principal-->
+            <div class="title__container">
+                <h1 class="title__text">¡Descubre y disfruta nuestro exquisito menú! Conozca nuestras opciones...</h1>
+            </div>
+            <!--Contenedor de Opciones de Menú-->
+            <section class="wrapper">
+                <!--Contenedor de Carrito-->
+                <section class="cart">
+                    <h2>Carrito de compras 🛒</h2>
+                    <div id="cartContent"></div>
+                        <p>Total: $<span id="totalprice">0</span></p>
+                        <button id="totalpay">Terminar Compra</button>
+                    </div>
+                </section> 
+
+                <!--Contenedor de Categorias del Menú-->
+                <section class="menu-categories">
+                    <div class="menu-categories__buttons">
+                        <ul class="menu-categories__list">
+                            <li class="menu-categories__list-item"><a href="../html/menubebidas.html" class="menu-categories__link">Bebidas</a></li>
+                            <li class="menu-categories__list-item"><a href="../html/menucomidas.html" class="menu-categories__link">Comidas</a></li>
+                            <li class="menu-categories__list-item"><a href="#" class="menu-categories__link">Favoritos</a></li>
+                        </ul>
+                    </div>
+                    <!--Categoría Cafeteria-->
+                    <section class="category">
+                        <section class="category__list">
+                            <div class="category__item-wrapper" id="shopContent"></div>
+                    </section>   
+                           
+                </section>
+            </section>
+
+        </section>        
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
